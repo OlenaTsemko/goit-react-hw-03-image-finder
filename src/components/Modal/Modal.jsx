@@ -29,7 +29,11 @@ const Modal = ({ largeImageUrl, largeImageAlt, onClose }) => {
   return createPortal(
     <div className={styles.Overlay} onClick={handleOverlayClick}>
       <div className={styles.Modal}>
-        <img src={largeImageUrl} alt={largeImageAlt} />
+        <img
+          className={styles.ModalImg}
+          src={largeImageUrl}
+          alt={largeImageAlt}
+        />
       </div>
     </div>,
     modalRoot,

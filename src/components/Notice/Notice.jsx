@@ -6,7 +6,7 @@ const Notice = ({ notice }) =>
   notice && <p className={styles.Notice}>{notice}</p>;
 
 Notice.propTypes = {
-  notice: PropTypes.string,
+  notice: PropTypes.string.isRequired,
 };
 
 export default Notice;
