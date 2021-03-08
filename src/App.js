@@ -86,6 +86,8 @@ const App = () => {
 
   const closeModal = () => {
     setShowModal(false);
+    setLargeImageUrl('');
+    setLargeImageAlt('');
   };
 
   const shouldRenderBtn = images.length > 0 && renderBtn && !loading;
